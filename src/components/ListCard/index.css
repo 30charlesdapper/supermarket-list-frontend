@@ -10,7 +10,7 @@
     background-color: #7785db;
     border-radius: 12px;
     margin-bottom: 24px;
-    cursor: pointer;
+   
 }
 
 .checkbox {
@@ -20,7 +20,7 @@
     width: 24px;
     height: 24px;
     object-fit: contain;
-    cursor: pointer;
+    
 }
 
 .list-card-text-container {
@@ -43,5 +43,13 @@
     width: 6px;
     height: 12px;
     object-fit: contain;
+}
 
+.arrow-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 10%;
+    cursor: pointer;
 }

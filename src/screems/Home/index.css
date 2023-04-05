@@ -18,27 +18,76 @@
     border-radius: 24px;
 }
 
+
 .shopping-bag-image {
     width: 220px;
     height: 220px;
 }
 
 .home-screen-title {
-    max-width: 300px;
+    max-width: 320px;
     text-align: center;
 }
 
 .home-screen-subtitle {
-    max-width: 300px;
+    max-width: 320px;
     text-align: center;
-    margin-bottom: 30px;
-    padding: 0;
+    margin-bottom: 48px;
 }
 
+.home-screen-subtitle-description {
+    max-width: 452px;
+    text-align: left;
+    margin-bottom: 16px;
+}
 
 .home-screen-description {
     max-width: 452px;
     text-align: left;
-    margin-bottom: 16px;
+    margin-bottom: 16px; 
+}
+
+.home-screen-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 452px;
+    margin-top: 24px;
+}
+
+@media screen  and (max-width: 420px) {
+    .home-screen-content-container {
+        max-width: 320px;
+        max-height: 600px;
+        padding: 12px;
+    }
+
+    .home-button-content-container {
+        width: 300px;
+        margin-top: 8px;
+    }
+
+    .shopping-bag-image {
+        width: 140px;
+        height: auto;
+    }
+
+    .home-screen-subtitle-description {
+        max-width: 300px;
+    }
+
+    .home-screen-title {
+        max-width: 300px;
+    }
     
+    .home-screen-subtitle {
+        max-width: 300px;
+    }
+}
+
+@media screen  and (max-width: 830px) {
+    .home-screen-container {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
 }

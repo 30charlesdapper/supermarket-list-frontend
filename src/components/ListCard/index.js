@@ -1,15 +1,18 @@
+import {updateItem} from "../../services/request"
 import { useState } from "react";
 import "./index.css"
 
-export const ListCard = ({item, onClick}) => {
-    const [checked, setChecked] = useState(false);
+export const ListCard = ({item, onClick, onCheckItem}) => {
+   
+    
+    //const [checked, setChecked] = useState(false);
 
     return (
-        <div className="list-card-container" onClick={() => onClick(item)}>
+        <div className="list-card-container" >
             <div className="checkbox">
                 <input
-                    onChange={() => setChecked(!checked)}
-                    checked={checked}
+                    onChange={() => onCheckItem(item)}
+                    checked={item.checked}
                     id="checkbox"
                     type="checkbox"
                 />
@@ -19,7 +22,13 @@ export const ListCard = ({item, onClick}) => {
                  <span className="list-cart-title">{item?.name}</span>
                  <span className="list-cart-subtitle">{item?.quantity} unidades</span>
             </div>
-            <img src="/images/arrow.svg" alt="arro-icon" className="arrow-icon"/>
+           <div className="arrow-icon-container" onClick={() => onClick(item)} >
+           <img 
+                src="/images/arrow.svg" 
+                alt="arro-icon" 
+                className="arrow-icon"
+            />
+           </div>
          </div>
     )
 }

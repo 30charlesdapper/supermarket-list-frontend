@@ -1,5 +1,4 @@
 .button-container {
-
     font-size: 18px;
     color: white;
     font-weight: bold;
@@ -11,6 +10,12 @@
     cursor: pointer;
     margin-top: 12px;
     border: 1px solid #7785db;
+}
+
+@media screen  and (max-width: 420px) {
+    .button-container {
+        max-width: 300px;
+    }
 }
 
 .main {background-color: #7785db;
