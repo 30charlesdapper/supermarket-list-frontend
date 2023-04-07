@@ -6,7 +6,7 @@ import { createItem, updateItem, deleteItem } from '../../services/request'
 
 export const Modal = ({ onClose, item }) => {
     const [name, setName] = useState('')
-    const [quantity, setQuantity] = useState(0)
+    const [quantity, setQuantity] = useState(1)
 
     const validateBeforeSave = () => {
         if (name.lenght < 3) {
@@ -30,9 +30,7 @@ export const Modal = ({ onClose, item }) => {
                 alert("Item salvo com sucesso")
                 onClose()
             }
-       }
-
-        
+       }  
     }
 
     const callUpdateItem = async () => {
@@ -69,7 +67,7 @@ export const Modal = ({ onClose, item }) => {
         <div className='modal-content'>
             <div className='modal-header'>
                 <h1>{item ? 'Editar item' : 'Adicionar novo item'}</h1>
-                <button onClick={callAddItem} className='modal-close-button'/>
+                <button onClick={onClose} className='modal-close-button'/>
             </div>
             <Input
                 onChange={(text) => setName(text)}
@@ -85,8 +83,8 @@ export const Modal = ({ onClose, item }) => {
             />
             
          <div className='buttons-container'>
-            { item && 
-            <Button icon="trash" variant="outline" onClick={callDeleteItem}> Deletar item </Button>}
+            { item && (
+            <Button icon="trash" variant="outline" onClick={callDeleteItem}> Deletar item </Button>)}
             <Button onClick={item ? callUpdateItem: callAddItem}> 
               {item ? "Atualizar" : "Adicionar"} 
             </Button> 

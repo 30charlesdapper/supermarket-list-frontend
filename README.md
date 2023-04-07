@@ -2,7 +2,6 @@
 
 This is an application build using React.js, with the goal of make easier create supermarket lists.
 
-
 <p>
 <img height="500" src="https://github.com/30charlesdapper/supermarket-list-frontend/blob/master/public/images/demo.gif">
  </p>
@@ -12,6 +11,10 @@ This is an application build using React.js, with the goal of make easier create
 - React.js
 - CSS
 - Axios
+
+## Requirements to Run:
+
+-Node.js (https://nodejs.org)
 
 ## Running Instructions
 

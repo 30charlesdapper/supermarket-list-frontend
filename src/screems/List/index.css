@@ -31,14 +31,16 @@
 .list-screen-header-title-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .list-screen-header-title {
     font-size: 36px;
+    margin-left: 12px;
 }
 
 .list-screen-header-button-container {
-    width: 100px;
+    width: 160px;
 }
 
 .logo-image {

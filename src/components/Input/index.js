@@ -4,7 +4,7 @@ export const Input = ({label, placeholder, value, onChange, type}) => {
     return (
         <div className="input-container">
             <span className="input-label">{label}</span>
-            <Input 
+            <input 
             onChange={(e) => onChange(e.target.value)} 
             value={value} 
             className='input' 

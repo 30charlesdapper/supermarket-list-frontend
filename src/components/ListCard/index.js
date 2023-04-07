@@ -1,4 +1,4 @@
-import {updateItem} from "../../services/request"
+/* import {updateItem} from "../../services/request"
 import { useState } from "react";
 import "./index.css"
 
@@ -31,4 +31,22 @@ export const ListCard = ({item, onClick, onCheckItem}) => {
            </div>
          </div>
     )
+} */
+
+
+import './index.css'
+
+export const ListCard = (props) => {
+  const { item } = props
+
+  return (
+    <div className="list-card-container">
+      <img
+        className="checkbox"
+        src={`/images/${item?.checked ? 'checked.svg' : 'unchecked.svg'}`}
+        alt="checked-item"
+      />
+      <span>{item.name}</span>
+    </div>
+  )
 }

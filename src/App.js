@@ -1,5 +1,3 @@
-// import {useState, useEffect} from "react";
-// import { ListCard } from './components/ListCard';
 
 import './App.css';
 import { HomeScreen, ListScreen } from './screems';
@@ -9,8 +7,7 @@ import {
   Route,
 } from "react-router-dom"
 
-function App() {
-
+const App = () => {
 
   return (
     <Router>

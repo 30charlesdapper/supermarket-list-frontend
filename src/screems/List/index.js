@@ -47,6 +47,7 @@ export const ListScreen= () => {
         if(!result.error) {
             await loadListItems()
         }
+    }
 
     return (
     <div className='list-screen-container'>
@@ -80,5 +81,4 @@ export const ListScreen= () => {
         {modalVisible && <Modal item={selectedItem} onClose={onCloseModal}/>}
     </div>
 ) 
-}
 }
