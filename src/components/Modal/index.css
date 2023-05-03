@@ -10,7 +10,6 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
-
 }
 
 .modal-content {
@@ -33,7 +32,6 @@
     width: 100%;
     margin-bottom: 24px;
 }
-
 
 .modal-close-button {
     height: 24px;
@@ -66,6 +64,7 @@
     .modal-content {
         width: 100vw;
     }
+    
     .buttons-container {
         height: 18vh;
         margin-top: 42vh;

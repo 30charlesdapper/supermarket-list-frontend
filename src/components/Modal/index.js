@@ -20,7 +20,6 @@ export const Modal = ({ onClose, item }) => {
         }
         return true;
     }
-    
 
     const callAddItem = async () => {
        const validate = validateBeforeSave();
@@ -63,8 +62,9 @@ export const Modal = ({ onClose, item }) => {
     }
    }, [item])
 
-    return ( <div className='modal'>
-        <div className='modal-content'>
+    return (
+         <div className='modal'>
+            <div className='modal-content'>
             <div className='modal-header'>
                 <h1>{item ? 'Editar item' : 'Adicionar novo item'}</h1>
                 <button onClick={onClose} className='modal-close-button'/>
@@ -81,14 +81,16 @@ export const Modal = ({ onClose, item }) => {
                 label="Quantidade"
                 type="number"
             />
-            
-         <div className='buttons-container'>
-            { item && (
-            <Button icon="trash" variant="outline" onClick={callDeleteItem}> Deletar item </Button>)}
-            <Button onClick={item ? callUpdateItem: callAddItem}> 
+            <div className='buttons-container'>
+             { item && (
+             <Button icon="trash" variant="outline" onClick={callDeleteItem}> 
+             Deletar item 
+             </Button>
+             )}
+             <Button onClick={item ? callUpdateItem: callAddItem}> 
               {item ? "Atualizar" : "Adicionar"} 
-            </Button> 
-         </div>
+             </Button> 
+            </div>
         </div>
     </div>
     )

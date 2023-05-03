@@ -1,3 +1,3 @@
 import "./index.css"
 
-export const Loader = () => {<span className="lds-ring"> </span>}
+export const Loader = () => <span className="lds-ring"/>
