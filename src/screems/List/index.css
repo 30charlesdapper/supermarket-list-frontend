@@ -67,14 +67,17 @@
     .list-screen-content-container {
         width: 72vw;
     }
+
     .list-screen-header-title {
         font-size: 14px;
         line-height: 12px;
     }
+
     .logo-image {
         width: 34px;
         height: auto;
     }
+    
     .list-screen-header-button-container {
         width: 42px;
     }
