@@ -1,4 +1,3 @@
-
 import './App.css';
 import { HomeScreen, ListScreen } from './screems';
 import {
@@ -8,7 +7,6 @@ import {
 } from "react-router-dom"
 
 const App = () => {
-
   return (
     <Router>
       <Routes>
