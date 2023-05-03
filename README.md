@@ -14,6 +14,8 @@ This is an application build using React.js, with the goal of make easier create
 
 ## Requirements to Run:
 
+-https://supermarket-list-fronted.vercel.app/
+
 -Node.js (https://nodejs.org)
 
 ## Running Instructions
