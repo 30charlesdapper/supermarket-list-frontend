@@ -19,11 +19,15 @@
     }
 }
 
-.main {background-color: #7785db;
-color: white;}
+.main {
+    background-color: #7785db;
+    color: white;
+}
 
-.outline {background-color: #f2f4ff;
-color: #7785db;}
+.outline {
+    background-color: #f2f4ff;
+    color: #7785db;
+}
 
 .button-icon {
     height: 24px;
