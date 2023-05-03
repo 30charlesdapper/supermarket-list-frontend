@@ -1,4 +1,4 @@
-.home-screen-container {
+/* .home-screen-container {
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -83,7 +83,7 @@
     .home-screen-subtitle {
         max-width: 300px;
     }
-}
+} */
 
 @media screen  and (max-width: 830px) {
     .home-screen-container {
